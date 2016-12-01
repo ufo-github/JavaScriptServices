@@ -13,7 +13,7 @@ var sharedConfig = {
     },
     module: {
         loaders: [
-            { test: /\.ts$/, include: /ClientApp/, loaders: ['ts-loader?silent=true', 'angular2-template-loader'] },
+            { test: /\.ts$/, include: /ClientApp/, loaders: ['ts-loader?silent=true', 'angular2-template-loader', 'angular2-router-loader'] },
             { test: /\.html$/, loader: 'html-loader?minimize=false' },
             { test: /\.css$/, loader: 'to-string-loader!css-loader' },
             { test: /\.(png|jpg|jpeg|gif|svg)$/, loader: 'url-loader', query: { limit: 25000 } }
